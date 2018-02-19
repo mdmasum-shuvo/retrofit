@@ -62,7 +62,6 @@ public class CustomizedAdapter  extends RecyclerView.Adapter<CustomizedAdapter.C
 
     @Override
     public void onBindViewHolder(CustomViewHolder holder, final int position) {
-
         final Product e = productList.get(position);
         holder.txtName.setText(e.getName());
 
