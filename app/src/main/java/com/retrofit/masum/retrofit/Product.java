@@ -42,10 +42,6 @@ public class Product implements Serializable{
     @SerializedName("last_updated")
     private String last_updated;
 
-    public Product(String name) {
-        this.name = name;
-    }
-
     public Product(String id, String name, String realname, String symbol, String rank, String price_usd, String price_btc, String h_volume_usd, String market_cap_usd, String available_supply, String total_supply, String max_supply, String percent_change_1h, String percent_change_24h, String percent_change_7d, String last_updated) {
         this.id = id;
         this.name = name;
