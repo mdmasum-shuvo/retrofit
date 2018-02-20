@@ -75,8 +75,6 @@ public class CustomizedAdapter  extends RecyclerView.Adapter<CustomizedAdapter.C
             }
         });
 
-
-
     }
 
 

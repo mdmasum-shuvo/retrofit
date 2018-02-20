@@ -48,12 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getALlData(int from,int limit) {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(Api.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create()) //Here we are using the GsonConverterFactory to directly convert json data to object
-                .build();
 
-        Api api = retrofit.create(Api.class);
+        Api api =
+                ApiClient.getClient().create(Api.class);
 
         Call<List<Product>> call = api.getHeroes(from,limit);
 
